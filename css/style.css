@@ -1,0 +1,379 @@
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  /* color: #222222; */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Dobra 1 */
+
+.dobra-1 {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+}
+
+.dobra-1 img {
+  width: 175px;
+}
+
+.dobra-1-menu ul {
+  display: flex;
+}
+
+.dobra-1-menu ul li {
+  padding: 0 20px;
+}
+
+.dobra-1-menu ul li a {
+  color: #fff;
+}
+.dobra-1-menu ul li a:hover {
+  font-weight: bold;
+}
+
+/* Dobra 2 */
+
+.dobra-2 {
+  height: 90vh;
+  /* background-color: #777; */
+  background: url(../assets/bg_dobra2.jpg)  no-repeat center center; 
+}
+
+.dobra-2-content {
+  width: 1280px;
+  margin: 0 auto;
+  padding-right: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dobra-2-content p {
+  margin-top: 3rem;
+  color:red;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+ 
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-align: left;
+  opacity: .8;
+}
+
+.dobra-2-content h1 {
+  color: #fff;
+  text-transform: uppercase;
+  padding-right: 30px;
+  font-size: 38px;
+  line-height: 48px;
+  letter-spacing: 0;
+}
+
+.dobra-2-content h4 {
+  margin-top: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  padding-right: 60px;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
+  opacity: .8;
+}
+
+.dobra-2-content button {
+  margin-top: 40px;
+  background-color: red;
+  color: #000;
+}
+
+.dobra-2-content .dobra-2-p {
+  margin-top: 1rem;
+  color:#fff;
+  text-transform: uppercase;
+}
+
+.seta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  margin-top: 10vh;
+}
+
+.seta h1 {
+  margin-top: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  padding-right: 30px;
+  font-size: 38px;
+  line-height: 48px;
+  letter-spacing: 0;
+}
+
+.seta img {
+  display: border-box;
+  -webkit-animation: arrow-down 1.5s infinite alternate;
+  animation: arrow-down 1.5s infinite alternate;
+}
+
+@keyframes arrow-down {
+  0%,
+  40% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(5px);
+  }
+}
+
+/* Dobra 3 */
+
+.dobra-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1280px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.dobra-3-h1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: #000;
+  text-transform: uppercase;
+  padding-right: 30px;
+  font-size: 38px;
+  line-height: 48px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.dobra-3-conteudo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 1280px;
+}
+
+.dobra-3-categorias {
+  padding-right: 60px;
+}
+
+.dobra-3-categorias ul li {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+}
+
+.dobra-3-categorias ul li::before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 50px;
+  margin-right: 10px;
+  background: #9C6215;
+}
+
+.dobra-3-categorias ul li img {
+  cursor: pointer;
+}
+
+.dobra-3-descricao {
+  display: flex;
+}
+
+.dobra-3-descricao ul li {
+  list-style-type: disc;
+}
+
+.dobra-3-descricao .teste{
+  max-width: 720px;
+}
+
+.dobra-3-nav ul {
+  display: flex;
+}
+
+.dobra-3-nav ul li {
+  padding: 0 20px 0 0;
+  cursor: pointer;
+}
+
+.dobra-3-h4 {
+  margin-top: 80px;
+}
+
+/* Dobra 4 */
+
+.dobra-4 {
+  background-color: rgb(45, 122, 122);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem 3rem;
+}
+
+.dobra-4-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+}
+
+.dobra-4-content h4 {
+  margin-top: 2rem;
+}
+
+.dobra-4-div {
+  display: flex;
+  align-items: center;
+}
+
+.dobra-4-divimg {
+  height: 30px;
+  padding-right: 20px;
+}
+
+.dobra-4-img {
+  display: flex;
+  flex: 1;
+}
+
+/* Dobra 5 */
+
+.dobra-5 {
+  background-color: rgb(224, 243, 243);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem 3rem;
+}
+
+.dobra-5-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+}
+
+.dobra-5-content h2 {
+  font-size: 3rem;
+  padding: 0 0 40px 0;
+}
+
+/* Footer */
+
+footer {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+footer p {
+  color: white;
+}
+
+/* Botão */
+
+.botao {
+  max-width: 400px;
+  padding: 20px 80px;
+  background-color: rgb(37, 172, 55);
+  font-size: 1.4rem;
+  color: #000;
+}
+
+.botao:hover {
+  transform: scale(1.05);
+  color: #fff;
+  background-color: #236ca3;
+}
+
+/* JS */
+
+.js-tabcontent section {
+  display: none;
+}
+
+.js-tabcontent section.ativo {
+  display: block !important;
+  animation: show 0.5s forwards;
+}
+
+.js-content2 section {
+  display: none;
+}
+
+.js-content2 section.ativado {
+  display: block !important;
+  animation: show 0.5s forwards;
+}
+
+.js-content3 .teste3 {
+  display: none;
+}
+
+.js-content3 section.ativado2 {
+  display: block !important;
+  animation: show 0.5s forwards;
+}
+
+.js-content4 .teste4 {
+  display: none;
+}
+
+.js-content4 section.ativado3 {
+  display: block !important;
+  animation: show 0.5s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
