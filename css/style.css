@@ -39,6 +39,7 @@ img {
   justify-content: space-around;
   align-items: center;
   background-color: black;
+  
 }
 
 .dobra-1 img {
@@ -64,8 +65,9 @@ img {
 
 .dobra-2 {
   height: 90vh;
+  margin-top: -1px;
   /* background-color: #777; */
-  background: url(../assets/bg_dobra2.jpg)  no-repeat center center; 
+  background: url(../assets/bg_dobra2.jpg)  no-repeat center; 
 }
 
 .dobra-2-content {
@@ -74,15 +76,16 @@ img {
   padding-right: 25%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .dobra-2-content p {
   margin-top: 3rem;
-  color:red;
+  color:#c55c23;
   text-transform: uppercase;
   margin-bottom: 1rem;
  
-  font-size: 18px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0;
@@ -94,7 +97,7 @@ img {
   color: #fff;
   text-transform: uppercase;
   padding-right: 30px;
-  font-size: 38px;
+  font-size: 2.75rem;
   line-height: 48px;
   letter-spacing: 0;
 }
@@ -105,7 +108,7 @@ img {
   text-transform: uppercase;
   padding-right: 60px;
 
-  font-size: 18px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0;
@@ -116,8 +119,10 @@ img {
 
 .dobra-2-content button {
   margin-top: 40px;
-  background-color: red;
-  color: #000;
+  background: #c55c23;
+  color: #fff;
+  transition: transform .2s ease-in;
+  border: none;
 }
 
 .dobra-2-content .dobra-2-p {
@@ -162,22 +167,113 @@ img {
   }
 }
 
+@media screen and (max-width:768px) {
+  .dobra-2 {
+    height: 90vh;
+    margin-top: -2px;
+    background: url(../assets/bg_dobra2_tablet.jpg)  no-repeat center center; 
+    padding: 0 40px;
+  }
+
+  .dobra-2-content {
+    max-width: 768px;
+    
+  }
+
+  .dobra-2-content p {
+    margin-top: 16rem;
+  }
+
+  .dobra-2-content h1 {
+    padding-right: 0px;
+    font-size: 2rem;
+  }
+
+  .dobra-2-content h4 {
+    margin-top: 1rem;
+    padding-right: 0px;
+  }
+
+  .dobra-2-content button {
+    margin-top: 20px;
+    max-width: 300px;
+    font-size: 0.8rem;
+  }
+
+  .botao {
+    max-width: 300px;
+    padding: 15px 40px;
+    
+  }
+
+  .seta img {
+    display: none;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .dobra-2 {
+    height: 90vh;
+    margin-top: -3px;
+    max-width: 425px;
+    padding: 0 20px;
+    background: url(../assets/bg_dobra2_tablet.jpg)  no-repeat center center; 
+    flex-wrap: wrap;
+  }
+
+  .dobra-2-content {
+    max-width: 425px;
+  }
+
+  .dobra-2-content p {
+    margin-top: 18rem;
+    font-size: 0.7rem;
+  }
+
+  .dobra-2-content h1 {
+    padding-right: 0%;
+    font-size: 1.4rem;
+    line-height: 24px;
+  }
+
+  .dobra-2-content h4 {
+    margin-top: 1rem;
+    padding-right: 20%;
+    font-size: 0.7rem;
+  }
+
+  .dobra-2-content button {
+    margin-top: 20px;
+    padding: 15px 15px;
+  }
+
+  .dobra-2-p {
+    font-size: 0.8rem;
+  }
+
+  .botao {
+    padding: 15px 15px;
+    font-size: 1rem;
+  }
+}
+
 /* Dobra 3 */
 
 .dobra-3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1280px;
-  margin: 0 auto;
+  
+  margin: -1px auto 0 auto;
   padding: 40px 0;
+  background: #000;
 }
 
 .dobra-3-h1 {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   padding-right: 30px;
   font-size: 38px;
@@ -191,6 +287,7 @@ img {
   justify-content: flex-start;
   align-items: flex-start;
   width: 1280px;
+  
 }
 
 .dobra-3-categorias {
@@ -200,9 +297,11 @@ img {
 .dobra-3-categorias ul li {
   margin-bottom: 20px;
   padding: 20px;
-  background-color: aquamarine;
+  background-color: #202227;
   display: flex;
   align-items: center;
+  color: #fff;
+  cursor: pointer;
 }
 
 .dobra-3-categorias ul li::before {
@@ -214,16 +313,17 @@ img {
   background: #9C6215;
 }
 
-.dobra-3-categorias ul li img {
-  cursor: pointer;
-}
-
 .dobra-3-descricao {
   display: flex;
 }
 
+.dobra-3-descricao h4, .dobra-3-descricao p {
+  color: #fff;
+}
+
 .dobra-3-descricao ul li {
   list-style-type: disc;
+  color: #fff;
 }
 
 .dobra-3-descricao .teste{
@@ -241,6 +341,57 @@ img {
 
 .dobra-3-h4 {
   margin-top: 80px;
+}
+
+@media screen and (max-width:768px) {
+  .dobra-3-h1 {
+    font-size: 2rem;
+    line-height: 24px;
+  }
+
+  .dobra-3-conteudo {
+    max-width: 768px;
+    padding: 0 40px;
+  }
+  
+  .dobra-3-categorias {
+    padding-right: 40px;
+  }
+}
+
+
+@media screen and (max-width:425px) {
+  .dobra-3-h1 {
+    font-size: 1.4rem;
+    padding: 0 20px;
+  }
+
+  .dobra-3-conteudo {
+    max-width: 425px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dobra-3-categorias {
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+  }
+
+  .dobra-3-categorias ul li {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+  }
+
+  .dobra-3-descricao {
+    padding: 0 20px;
+  }
+
+  .dobra-3-descricao ul li {
+    margin-left: 20px;
+  }
 }
 
 /* Dobra 4 */
