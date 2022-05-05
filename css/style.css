@@ -188,6 +188,11 @@ img {
     align-items: flex-start;
     flex-wrap: wrap;
   }
+
+  .dobra-2-content p {
+    margin-top: 4rem;
+  }
+
   .dobra-2-content h4 {
     margin-top: 1rem;
     padding-right: 100px;
