@@ -123,6 +123,7 @@ img {
   background-size: 800% 800%;
   color: #fff;
   transition: transform .2s ease-in;
+  border: none;
   border-radius: 15px;
   animation: cta 6s ease infinite;
 }
@@ -175,6 +176,7 @@ img {
 @media screen and (max-width:1366px) {
   .dobra-2 {
     margin-top: -5px;
+    background: url(../assets/bg_dobra2-2.jpg)  no-repeat 70% center; 
   }
 
   .dobra-2-content {
@@ -186,11 +188,23 @@ img {
     align-items: flex-start;
     flex-wrap: wrap;
   }
+  .dobra-2-content h4 {
+    margin-top: 1rem;
+    padding-right: 100px;
+  }
+
+  .seta {
+    margin-top: 5%;
+  }
 }
 
 @media screen and (max-width:1024px) {
   .dobra-2-content p {
     margin-top: 2rem;
+  }
+  .dobra-2-content h1 {
+    font-size: 2rem;
+    line-height: 36px;
   }
   .seta {
     margin-top: 6%;
@@ -200,10 +214,10 @@ img {
 
 @media screen and (max-width:768px) {
   .dobra-2 {
-    height: 90vh;
-    margin-top: -5px;
-    background: url(../assets/bg_dobra2_tablet.jpg)  no-repeat center center; 
-    padding: 0 40px;
+    height: auto;
+    margin-top: 0px;
+    background: url(../assets/bg_dobra2_tablet.jpg)  no-repeat top center; 
+    padding: 20px 40px;
   }
 
   .dobra-2-content {
@@ -215,18 +229,20 @@ img {
   }
 
   .dobra-2-content p {
-    margin-top: 17rem;
+    margin-top: 14rem;
+    font-size: 0.8rem;
   }
 
   .dobra-2-content h1 {
     padding-right: 0px;
-    font-size: 1.75rem;
-    line-height: 36px;
+    font-size: 1.5rem;
+    line-height: 24px;
   }
 
   .dobra-2-content h4 {
     margin-top: 1rem;
     padding-right: 0px;
+    font-size: 0.8rem;
   }
 
   .dobra-2-content button {
