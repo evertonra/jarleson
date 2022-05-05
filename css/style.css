@@ -176,11 +176,11 @@ img {
 @media screen and (max-width:1366px) {
   .dobra-2 {
     margin-top: -5px;
-    background: url(../assets/bg_dobra2-2.jpg)  no-repeat 70% top; 
+    background: url(../assets/bg_dobra2-2.jpg)  no-repeat 76% 25%; 
   }
 
   .dobra-2-content {
-    margin: 0 10%; 
+    margin: 0 5%; 
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -190,7 +190,7 @@ img {
   }
 
   .dobra-2-content p {
-    margin-top: 8rem;
+    margin-top: 4rem;
   }
 
   .dobra-2-content h1 {
@@ -207,7 +207,7 @@ img {
   }
 
   .seta {
-    margin-top: 3%;
+    margin-top: 2%;
   }
 }
 
