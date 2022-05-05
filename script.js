@@ -17,3 +17,24 @@ if (tabMenu.length && tabContent.length) {
     });
   });
 }
+
+//Selecionar curso
+const links = document.querySelectorAll('.dobra-3-categorias ul li');
+function ativar(event) {
+  event.preventDefault();
+  links.forEach((link) => {
+    link.classList.remove('selecionado');
+  });
+  event.currentTarget.classList.add('selecionado');
+}
+
+links.forEach((link) => {
+  link.addEventListener('click', ativar);
+});
+
+//ativa a navegação, remove classe ativo e puxa os cursos q foram selecionados
+links.forEach((item, index) => {
+  item.addEventListener('click', function () {
+    item.classList.add('selecionado');
+  });
+});
