@@ -121,7 +121,8 @@ img {
   opacity: .8;
 }
 
-.dobra-2-content button {
+.dobra-2-content button,
+.dobra-5 button {
   margin-top: 2rem;
   background: linear-gradient(268deg, #e28d5f, #c55c23, #e28d5f,#c55c23);
   background-size: 800% 800%;
@@ -130,6 +131,7 @@ img {
   border: none;
   border-radius: 15px;
   animation: cta 6s ease infinite;
+  box-shadow: 0 0 1em #c55c23; 
 }
 
 @keyframes cta {
@@ -457,7 +459,7 @@ img {
 
 
 @media screen and (max-width:425px) {
-   .dobra-3-h1 {
+  .dobra-3-h1 {
     font-size: 1rem;
     padding: 0 0px;
   }
@@ -465,7 +467,7 @@ img {
   .dobra-3-h1 br {
     display: none;
   }
-  
+
   .dobra-3-conteudo {
     max-width: 100%;
     padding: 0 ;
@@ -536,7 +538,15 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-direction: column;
   padding: 3rem 3rem;
+}
+
+.dobra-5-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 
 .dobra-5-content {
@@ -548,6 +558,10 @@ img {
 .dobra-5-content h2 {
   font-size: 3rem;
   padding: 0 0 40px 0;
+}
+
+.dobra-5 button  {
+  margin-top: 80px;
 }
 
 /* Footer */
