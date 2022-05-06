@@ -12,26 +12,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 
+  <script>document.documentElement.className += 'js';</script>
+
   <link rel="shortcut icon" href="assets/fav.png">
 </head>
 
 <body>
   <header>
     <div class="dobra-1">
-      <div class="">
+      <div>
         <a href=""><img src="assets/LogoHorizontal_v2.png" alt="Logotipo" /></a>
       </div>
       <div class="dobra-1-menu">
-        <ul>
+        <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+        <ul data-menu="list" id="menu">
           <li><a href="#home">Home</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#resultados">Resultados e Clientes</a></li>
           <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#Contato">Contato</a></li>
         </ul>
+
       </div>
     </div>
   </header>
 
-  <section class="dobra-2">
+  <section id="home" class="dobra-2">
     <div class="dobra-2-content">
       <p>Nós cuidamos do tráfego online do seu negócio</p>
       <h1>
@@ -51,7 +56,7 @@
     </div>
   </section>
 
-  <section class="dobra-3">
+  <section id="servicos" class="dobra-3">
     <h1 class="dobra-3-h1">ALCANCE SEUS OBJETIVOS<br> COM A DIGITAL VIRTUS</h1>
     <div class="dobra-3-conteudo">
       <div class="dobra-3-categorias" data-anime="scroll" id="items">
@@ -125,7 +130,7 @@
     </div>
   </section>
 
-  <section class="dobra-4">
+  <section id="resultados" class="dobra-4">
     <div class="dobra-4-content">
       <h2>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -177,7 +182,7 @@
     </div>
   </section>
 
-  <section class="dobra-5">
+  <section id="sobre" class="dobra-5">
     <div>
       <img class="dobra-5-img" src="assets/dobra-4-img.jpg" alt="">
     </div>
@@ -198,7 +203,7 @@
     <p>Alguns direitos reservados</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 
 </html>
