@@ -121,8 +121,8 @@ img {
   opacity: .8;
 }
 
-.dobra-2-content button,
-.dobra-5 button {
+.dobra-2-content a,
+.dobra-5 a {
   margin-top: 2rem;
   background: linear-gradient(268deg, #e28d5f, #c55c23, #e28d5f,#c55c23);
   background-size: 800% 800%;
@@ -132,7 +132,15 @@ img {
   border-radius: 15px;
   animation: cta 6s ease infinite;
   box-shadow: 0 0 1em #c55c23; 
+  padding: 1rem 6rem;
 }
+
+/* .dobra-2-content button a,
+.dobra-5 button a{
+  color: white;
+  padding: 20px 80px;
+  font-size: 1rem;
+} */
 
 @keyframes cta {
   0% {
@@ -208,7 +216,7 @@ img {
     padding-right: 100px;
   }
 
-  .dobra-2-content button {
+  .dobra-2-content a {
     margin-top: 20px;
   }
 
@@ -264,15 +272,10 @@ img {
     font-size: 0.8rem;
   }
 
-  .dobra-2-content button {
+  .dobra-2-content a {
     margin-top: 1rem;
-    max-width: 300px;
     font-size: 0.8rem;
-  }
-
-  .botao {
-    max-width: 300px;
-    padding: 15px 40px;
+    padding: 1rem 4rem;
   }
 
   .dobra-2-content .dobra-2-p {
@@ -316,9 +319,8 @@ img {
     display: none;
   }
 
-  .dobra-2-content button {
+  .dobra-2-content a {
     margin-top: 20px;
-    padding: 15px 40px;
   }
 
   .dobra-2-p {
@@ -576,22 +578,6 @@ footer {
 
 footer p {
   color: white;
-}
-
-/* Botão */
-
-.botao {
-  max-width: 400px;
-  padding: 20px 80px;
-  background-color: rgb(37, 172, 55);
-  font-size: 1.4rem;
-  color: #000;
-}
-
-.botao:hover {
-  transform: scale(1.05);
-  color: #fff;
-  background-color: #236ca3;
 }
 
 /* JS */
