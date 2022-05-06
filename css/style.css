@@ -457,11 +457,15 @@ img {
 
 
 @media screen and (max-width:425px) {
-  .dobra-3-h1 {
-    font-size: 1.0rem;
-    padding: 0 20px;
+   .dobra-3-h1 {
+    font-size: 1rem;
+    padding: 0 0px;
   }
 
+  .dobra-3-h1 br {
+    display: none;
+  }
+  
   .dobra-3-conteudo {
     max-width: 100%;
     padding: 0 ;
