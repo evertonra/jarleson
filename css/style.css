@@ -549,6 +549,10 @@ img {
   margin-bottom: 2rem;
 }
 
+.dobra-5-container:last-child {
+  margin-bottom: 0;
+}
+
 .dobra-5-content {
   display: flex;
   flex-direction: column;
@@ -559,14 +563,17 @@ img {
 
 .dobra-5-content h2 {
   font-size: 3rem;
-  padding: 0 0 40px 0;
+  padding: 0 0 20px 0;
 }
 
 .dobra-5 .botao  {
-  margin-top: 1rem;
+  margin-top: .5rem;
 }
 
 @media screen and (max-width:1366px)  {
+  .dobra-5-img {
+    width: 200px;
+  }
   .dobra-5-content h2 {
     font-size: 2rem;
   }
