@@ -538,7 +538,7 @@ img {
 }
 
 .dobra-5-img {
-  width: 300px;
+  width: 250px;
 }
 
 .dobra-5-container {
@@ -546,7 +546,7 @@ img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .dobra-5-content {
@@ -563,7 +563,16 @@ img {
 }
 
 .dobra-5 .botao  {
-  margin-top: 2rem;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width:1366px)  {
+  .dobra-5-content h2 {
+    font-size: 2rem;
+  }
+  .dobra-5 .botao  {
+    margin-top: .5rem;
+  }
 }
 
 @media screen and (max-width:768px)  {
