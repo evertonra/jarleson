@@ -135,13 +135,6 @@ img {
   padding: 1rem 6rem;
 }
 
-/* .dobra-2-content button a,
-.dobra-5 button a{
-  color: white;
-  padding: 20px 80px;
-  font-size: 1rem;
-} */
-
 @keyframes cta {
   0% {
   background-position: 0% 50%;
@@ -596,6 +589,12 @@ img {
   }
   .dobra-5-content h2 {
     font-size: 1.5rem;
+  }
+
+  .dobra-5 .botao {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    padding: 1rem 4rem;
   }
 }
 
